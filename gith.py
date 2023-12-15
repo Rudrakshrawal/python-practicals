@@ -234,24 +234,93 @@ print(
 
 True or True and False
 
-and is evaluated before or. That's why the first expression above is True. If we evaluated it from left to right, we would have calculated True or True first (which is True), 
-and then taken the and of that result with False, giving a final value of False.
+# and is evaluated before or. That's why the first expression above is True. If we evaluated it from left to right, we would have calculated True or True first (which is True), 
+# and then taken the and of that result with False, giving a final value of False.
 
 
 
 
 
 
+# Booleans are most useful when combined with conditional statements, using the keywords if, elif, and else.
+def inspect(x):
+    if x == 0:
+        print(x, "is zero")
+    elif x > 0:
+        print(x, "is positive")
+    elif x < 0:
+        print(x, "is negative")
+    else:
+        print(x, "is unlike anything I've ever seen...")
+
+inspect(0)
+inspect(-15)
 
 
 
 
+-------
+print(bool(1)) # all numbers are treated as true, except 0
+print(bool(0))
+print(bool("asf")) # all strings are treated as true, except the empty string ""
+print(bool("")
 
 
 
+-----
+#LIST
+l=[32,5,32,5,6,72,2]
+l.append(3)#add 7 to the list
+l.sort(reverse=True)#sort in descending order
+l.reverse#reverse the list
+print(l.index(72))#gives the index value of the number
+print(l,count(72))#to find how many times did that term
 
+#TO Copy LIST
+m=l.copy()
+m[0]
+print(l)
 
+#To insert
+l.insert(1,888)#(index,value)
+#To Extend
+m=[321,342,5,43]
+l.extend(m)#if we use the append func then the whole list along with the square brackets will be added in the list
 
+#To add a new list
+m=[6,5,3,7,4]
+k= l+ m
+print(k)
+
+-----
+
+#TUPLE         (Are Immutable)
+tup = (3,34,2,5,2)
+print(type(tup), tup)
+print(tup[2])#to find the value at that index
+#slicing
+tup2=tup[1:4]#tup[start:end]
+print(tup2)#[2,5,2]
+
+#Tuple to list and back to tiple
+countries=("italy","russia","china","america","bhutan")
+check=list(countries)
+check.append("czech_republic")
+check.pop(2)#Remove item
+check[2]="poland"#Chnages item
+countries=tuple(check)
+print(countries)
+
+#can also add by making a new tuple
+
+tuple=[3,42,4,4,4,4,4,32,442,3,33,44,2]
+res = tuple.count(4)
+print('count of 4 in tuple is', res)
+
+res=tuple.index(3)
+res=tuple.index(3,4,8)#[to find,from,till]
+
+res = len(tuple)
 
 
 
