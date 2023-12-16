@@ -327,10 +327,34 @@ res = len(tuple)
 
 
 
+--------
+#F-String
+sentance= "my name is {} and i'm from {}" 
+country = "india"
+name = "ruu"
+print(sentance.format(country, name)
 
 
+#again
+      =print(f"My name is {name} and i'm from {Country}")
+      
 
+name=[Ruu]
+Country = [Bharat]
+bre
+--------
 
+#Docsstring
+'''written just below a function or just above the end of a defined function'''
 
+def money(n):
+    '''haatho ka maail'''
+    print(n*"i")
+print(money.__doc__)
+money(100000)
+----------
+
+#BREAK FUNCTION IS USED TO BREAK THE WHILE LOOP NOT TO CANCEL THE WHOLE FUNCTION SO TO DO THAT YOI MUST USE 
+exit()#FUNCTION
 
 
