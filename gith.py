@@ -358,3 +358,10 @@ money(100000)
 exit()#FUNCTION
 
 
+--------------
+#while using a def function we can uuse return and enter a condition to get a True value and return not to get the False value
+def is_positive(number):
+    return number>0
+#return not
+def is_negative(number):
+    return not number>0
