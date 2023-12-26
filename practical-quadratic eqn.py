@@ -21,4 +21,21 @@ while l==True:
   else :
      l=bool(0)
 
+
+
+#SHORT ONE..UK
+import cmath
+
+def solve_quadratic(a, b, c):
+    D = b**2 - 4*a*c
+    sqrt_D = cmath.sqrt(D)
+    x1 = (-b + sqrt_D) / (2*a)
+    x2 = (-b - sqrt_D) / (2*a)
+    return x1, x2
+
+a, b, c = map(float, input("Enter coefficients a, b, c separated by space: ").split())
+roots = solve_quadratic(a, b, c)
+print("Roots of the quadratic equation:", roots)
+
+
   
