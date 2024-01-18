@@ -323,6 +323,47 @@ res=tuple.index(3,4,8)#[to find,from,till]
 res = len(tuple)
 
 
+#the as_integer_ratio() method of float objects returns a numerator and a denominator in the form of a tuple
+x = 0.125
+x.as_integer_ratio()
+#output --> (1,8)
+
+
+
+
+planets = ['Mercury', 'Venus', 'Earth', 'Mars', 'Jupiter', 'Saturn', 'Uranus', 'Neptune']
+for planet in planets:
+    print(planet, end=' ') # print all on same line
+
+# The for loop specifies
+
+# the variable name to use (in this case, planet)
+# the set of values to loop over (in this case, planets)
+# You use the word "in" to link them together.
+
+# The object to the right of the "in" can be any object that supports iteration. Basically,
+# if it can be thought of as a group of things, you can probably loop over it. In addition to lists, we can iterate over the elements of a tuple:
+multiplicands = (2, 2, 2, 3, 3, 5)
+product = 1
+for mult in multiplicands:
+    product = product * mult
+product
+
+# The other type of loop in Python is a while loop, which iterates until some condition is met
+
+
+#LIST COMPREHENSION
+squares = [n**2 for n in range(10)]
+squares
+
+
+
+
+
+
+
+
+
 
 
 
@@ -365,3 +406,34 @@ def is_positive(number):
 #return not
 def is_negative(number):
     return not number>0
+
+
+
+
+
+# Going between strings and lists:
+# .split() and .join()
+str.split() turns a string into a list of smaller strings, breaking on whitespace by default. 
+# This is super useful for taking you from one big string to a list of words.
+
+words = claim.split()
+words
+# ['Pluto', 'is', 'a', 'planet!']
+datestr = '1956-01-31'
+year, month, day = datestr.split('-')
+# str.join() takes us in the other direction, sewing a list of strings up into one long string, using the string it was called on as a separator.
+'/'.join([month, day, year])
+# '01/31/1956' output
+
+
+# Dictionaries are a built-in Python data structure for mapping keys to values.
+
+numbers = {'one':1, 'two':2, 'three':3}
+# In this case 'one', 'two', and 'three' are the keys, and 1, 2 and 3 are their corresponding values.
+
+# Values are accessed via square bracket syntax similar to indexing into lists and strings.
+
+
+
+
+
