@@ -1,3 +1,4 @@
+#Pyramid
 l = True
 while l ==True:
   n=int(input("The rows for the pyramid is?: "))
