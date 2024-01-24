@@ -7,4 +7,4 @@ password=""
 for i in range(length):
   password+=random.choice(chars)
 print(password)
-#Ransom is not actually random, rather its based on a "seed value" with the help of which the ranaom works.
+#Random is not actually random, rather its based on a "seed value" with the help of which the ranaom works.
